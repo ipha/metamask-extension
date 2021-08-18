@@ -64,6 +64,8 @@
     "storybook:build": "build-storybook -c .storybook -o storybook-build -s ./app,./.storybook/images",
     "storybook:deploy": "storybook-to-ghpages --existing-output-dir storybook-build --remote storybook --branch master",
     "update-changelog": "auto-changelog update",
+    "validate-changelog": "auto-changelog validate",
+    "validate-changelog:rc": "auto-changelog validate --rc",
     "generate:migration": "./development/generate-migration.sh",
     "lavamoat:auto": "lavamoat ./development/build/index.js --writeAutoPolicy",
     "lavamoat:debug": "lavamoat ./development/build/index.js --writeAutoPolicyDebug"
